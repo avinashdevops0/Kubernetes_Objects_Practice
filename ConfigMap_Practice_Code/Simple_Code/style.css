@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4a6fa5;
+}
+
+#app-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.env-badge {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#welcome-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#welcome-message {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.config-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.config-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #555;
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.config-hint {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

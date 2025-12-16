@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome App - ConfigMap Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="app-title">Welcome App</h1>
+            <p class="env-badge" id="environment">Environment: loading...</p>
+        </header>
+
+        <main>
+            <div class="welcome-card">
+                <h2 id="welcome-title">Welcome!</h2>
+                <p id="welcome-message">Loading welcome message...</p>
+                <p class="author" id="message-author">- System</p>
+            </div>
+
+            <div class="config-section">
+                <h3>Configuration Values</h3>
+                <table>
+                    <tr><td>App Name:</td><td id="config-name">-</td></tr>
+                    <tr><td>Welcome Title:</td><td id="config-title">-</td></tr>
+                    <tr><td>Environment:</td><td id="config-env">-</td></tr>
+                    <tr><td>Max Users:</td><td id="config-users">-</td></tr>
+                    <tr><td>Debug Mode:</td><td id="config-debug">-</td></tr>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>Version: <span id="app-version">1.0.0</span></p>
+            <p class="config-hint">These values come from Kubernetes ConfigMap</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
