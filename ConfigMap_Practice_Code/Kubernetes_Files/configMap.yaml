@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: welcome-configMap
+data:
+  APP_NAME: "Welcome App v2"
+  WELCOME_TITLE: "Hello Kubernetes!"
+  WELCOME_MESSAGE: "This message is from ConfigMap."
+  MESSAGE_AUTHOR: "System Admin"
+  ENVIRONMENT: "staging"
+  APP_VERSION: "1.5.0"
+  MAX_USERS: "250"
+  DEBUG_MODE: "true"
