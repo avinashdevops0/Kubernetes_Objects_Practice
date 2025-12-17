@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: cont-1
+        image: avinashg0/cands
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: configmap-env
+        - secretRef:
+            name: secrets-env
